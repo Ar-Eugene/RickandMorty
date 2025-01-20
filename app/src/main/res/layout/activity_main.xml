@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginTop="90dp"
+        android:text = "@string/characters"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:textFontWeight="700"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_24dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_rick_and_morty_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_24dp"
+            tools:itemCount="3"
+            tools:listitem="@layout/characters_item" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
