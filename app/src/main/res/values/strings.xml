@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">RickandMorty</string>
     <string name="characters">Characters</string>
+    <string name="watch_episodes">Watch episodes</string>
+    <string name="alive">ALIVE</string>
 </resources>

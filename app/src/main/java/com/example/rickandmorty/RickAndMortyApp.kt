@@ -3,6 +3,7 @@ package com.example.rickandmorty
 import android.app.Application
 import com.example.rickandmorty.di.dataModule
 import com.example.rickandmorty.di.interactorModule
+import com.example.rickandmorty.di.mapperModule
 import com.example.rickandmorty.di.repositoryModule
 import com.example.rickandmorty.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
@@ -14,7 +15,7 @@ class RickAndMortyApp : Application() {
 
         startKoin {
             androidContext(this@RickAndMortyApp)
-            modules(dataModule, interactorModule, repositoryModule, viewModelModule)
+            modules(dataModule, interactorModule, repositoryModule, viewModelModule, mapperModule)
         }
 
     }

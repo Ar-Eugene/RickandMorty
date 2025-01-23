@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.rickandmorty"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.rickandmorty"
@@ -59,6 +59,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("com.google.android.material:material:1.6.1")
     implementation("com.github.bumptech.glide:glide:4.14.2")
+    implementation ("jp.wasabeef:glide-transformations:4.3.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
